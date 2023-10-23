@@ -84,119 +84,112 @@ const getUploadedImage = (e) => {
                 class="w-full flex items-center justify-around border-t border-t-gray-300 mt-8"
             >
                 <div class="text-center p-3">
-                    <div class="font-extrabold">
-                        55
-                        <div class="text-gray-400 font-semibold -mt-1.5">
-                            posts
-                        </div>
-                    </div>
-                    <div class="text-center p-3">
-                        <div class="font-extrabold">43</div>
-                        <div class="text-gray-400 font-semibold -mt-1.5">
-                            followers
-                        </div>
-                    </div>
-                    <div class="text-center p-3">
-                        <div class="font-extrabold">55</div>
-                        <div class="text-gray-400 font-semibold -mt-1.5">
-                            following
-                        </div>
+                    <div class="font-extrabold">55</div>
+                    <div class="text-gray-400 font-semibold -mt-1.5">posts</div>
+                </div>
+                <div class="text-center p-3">
+                    <div class="font-extrabold">43</div>
+                    <div class="text-gray-400 font-semibold -mt-1.5">
+                        followers
                     </div>
                 </div>
+                <div class="text-center p-3">
+                    <div class="font-extrabold">55</div>
+                    <div class="text-gray-400 font-semibold -mt-1.5">
+                        following
+                    </div>
+                </div>
+            </div>
 
+            <div
+                class="w-full flex items-center justify-between border-t border-t-gray-300"
+            >
                 <div
-                    class="w-full flex items-center justify-between border-t border-t-gray-300"
+                    class="p-3 w-1/4 flex justify-center border-t border-t-gray-900"
+                >
+                    <Grid
+                        :size="28"
+                        fillColor="#0095F6"
+                        class="cursor-pointer"
+                    />
+                </div>
+                <div class="p-3 w-1/4 flex justify-center">
+                    <PlayBoxOutline
+                        :size="28"
+                        fillColor="#8E8E8E"
+                        class="cursor-pointer"
+                    />
+                </div>
+                <div class="p-3 w-1/4 flex justify-center">
+                    <BookmarkOutline
+                        :size="28"
+                        fillColor="#8E8E8E"
+                        class="cursor-pointer"
+                    />
+                </div>
+                <div class="p-3 w-1/4 flex justify-center">
+                    <AccountBoxOutline
+                        :size="28"
+                        fillColor="#8E8E8E"
+                        class="cursor-pointer"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div id="ContentSection" class="md:pr-1.5 lg:pl-0 md:pl-[90px]">
+            <div class="md:block mt-10 hidden border-t border-t-gray-300">
+                <div
+                    class="flex items-center justify-between max-w-[600px] mx-auto font-extrabold text-gray-400 text-[15px]"
                 >
                     <div
-                        class="p-3 w-1/4 flex justify-center border-t border-t-gray-900"
+                        class="p-[17px] w-1/4 flex justify-center items-center border-t border-t-gray-900"
                     >
                         <Grid
-                            :size="28"
-                            fillColor="#0095F6"
+                            :size="15"
+                            fillColor="#000000"
                             class="cursor-pointer"
                         />
+                        <div class="ml-2 -mb-[1px] text-gray-900">POSTS</div>
                     </div>
-                    <div class="p-3 w-1/4 flex justify-center">
-                        <PlayBoxOutline
-                            :size="28"
-                            fillColor="#8E8E8E"
-                            class="cursor-pointer"
-                        />
-                    </div>
-                    <div class="p-3 w-1/4 flex justify-center">
-                        <BookmarkOutline
-                            :size="28"
-                            fillColor="#8E8E8E"
-                            class="cursor-pointer"
-                        />
-                    </div>
-                    <div class="p-3 w-1/4 flex justify-center">
-                        <AccountBoxOutline
-                            :size="28"
-                            fillColor="#8E8E8E"
-                            class="cursor-pointer"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div id="ContentSection" class="md:pr-1.5 lg:pl-0 md:pl-[90px]">
-                <div class="md:block mt-10 hidden border-t border-t-gray-300">
                     <div
-                        class="flex items-center justify-between max-w-[600px] mx-auto font-extrabold text-gray-400 text-[15px]"
+                        class="p-[17px] w-1/4 flex justify-center items-center"
                     >
-                        <div
-                            class="p-[17px] w-1/4 flex justify-center items-center border-t border-t-gray-900"
-                        >
-                            <Grid
-                                :size="15"
-                                fillColor="#000000"
-                                class="cursor-pointer"
-                            />
-                            <div class="ml-2 -mb-[1px] text-gray-900">
-                                POSTS
-                            </div>
-                        </div>
-                        <div
-                            class="p-[17px] w-1/4 flex justify-center items-center"
-                        >
-                            <PlayBoxOutline
-                                :size="15"
-                                fillColor="#8E8E8E"
-                                class="cursor-pointer"
-                            />
-                            <div class="ml-2 -mb-[1px] text-gray-900">
-                                REELS
-                            </div>
-                        </div>
-                        <div
-                            class="p-[17px] w-1/4 flex justify-center items-center"
-                        >
-                            <BookmarkOutline
-                                :size="15"
-                                fillColor="#8E8E8E"
-                                class="cursor-pointer"
-                            />
-                            <span class="ml-2 -mb-[1px]">SAVED</span>
-                        </div>
-                        <div
-                            class="p-[17px] w-1/4 flex justify-center items-center"
-                        >
-                            <AccountBoxOutline
-                                :size="15"
-                                fillColor="#8E8E8E"
-                                class="cursor-pointer"
-                            />
-                            <span class="ml-2 -mb-[1px]">TAGGED</span>
-                        </div>
+                        <PlayBoxOutline
+                            :size="15"
+                            fillColor="#8E8E8E"
+                            class="cursor-pointer"
+                        />
+                        <div class="ml-2 -mb-[1px] text-gray-900">REELS</div>
+                    </div>
+                    <div
+                        class="p-[17px] w-1/4 flex justify-center items-center"
+                    >
+                        <BookmarkOutline
+                            :size="15"
+                            fillColor="#8E8E8E"
+                            class="cursor-pointer"
+                        />
+                        <span class="ml-2 -mb-[1px]">SAVED</span>
+                    </div>
+                    <div
+                        class="p-[17px] w-1/4 flex justify-center items-center"
+                    >
+                        <AccountBoxOutline
+                            :size="15"
+                            fillColor="#8E8E8E"
+                            class="cursor-pointer"
+                        />
+                        <span class="ml-2 -mb-[1px]">TAGGED</span>
                     </div>
                 </div>
-
-                <div class="grid md:gap-4 gap-1 grid-cols-3 relative">
-                    <ContentOverlay />
-                </div>
-
-                <div class="pb-20"></div>
             </div>
+
+            <div class="grid md:gap-4 gap-1 grid-cols-3 relative">
+                <ContentOverlay />
+            </div>
+
+            <div class="pb-20"></div>
         </div>
     </MainLayout>
 </template>
